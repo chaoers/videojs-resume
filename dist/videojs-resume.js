@@ -51,8 +51,8 @@ var ResumeButton = (function (_Button) {
     key: 'handleClick',
     value: function handleClick() {
       this.player_.resumeModal.close();
-      this.player_.currentTime(this.resumeFromTime);
-      this.player_.play();
+      this.player.currentTime(this.resumeFromTime);
+      this.player.play();
       this.player_.trigger('resumevideo');
     }
   }, {
